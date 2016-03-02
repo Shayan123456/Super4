@@ -12,6 +12,7 @@
 --           Translated by: @NimaGame           --
 --                                              --
 --------------------------------------------------
+
 local LANG = 'fa'
 
 local function run(msg, matches)
@@ -240,101 +241,42 @@ local function run(msg, matches)
 
         -- bot.lua --
         set_text(LANG, 'bot:0', 2)
-        set_text(LANG, 'bot:1', '#bot on: فعال کردن بات در چنل فعلی.')
-        set_text(LANG, 'bot:2', '#bot off: غیر فعال کردن بات در چنل فعلی.')
+        set_text(LANG, 'bot:1', '
+		‌✅Commands part #1
+                              ➕
+                              ✅Commands for control member
+                         💭#kick : by <reply|id|username>
+                         💭#ban : by <reply|id|username>
+                         💭#unban : by <reply|id|username>
+                         💭#kickme
+                          💭#mute :- for one member by <id|reply|username>
+                        💭#mute :- cancel silent for member by <id|reply|username> 
 
-        -- commands.lua --
-        set_text(LANG, 'commands:0', 2)
-        set_text(LANG, 'commands:1', '#commands: نمایش دستورات تمامی پلاگین ها.')
-        set_text(LANG, 'commands:2', '#commands [plugin]: نمایش دستورات پلاگین مورد نظر.')
+                             ➕
+                             ✅Group control 
+                        💭#rules
+                        💭#setrules <write rules>
+                         💭#setphoto : then send photo
+                          💭#setname <write name>
+                       💭#id
+                        💭#ids chat :- show id and username all member in Gp
+                         💭#group settings :- settings Gp
+                        💭#getlink : send link in your pv
+                       💭#relink <id-chat> : change link group and send new link your pv
+                        💭#modlist :- show list moderation
+                        💭#help :- show the list help for you
 
-        -- export_gban.lua --
-        set_text(LANG, 'export_gban:0', 2)
-        set_text(LANG, 'export_gban:1', '#gbans installer: فرستادن لیست بن های سراسری به صورت یک فایل لوآ برای اشتراک گذاری با ربات های دیگر.')
-        set_text(LANG, 'export_gban:2', '#gbans list: ارسال لیست بن های سراسری .')
+                                ➕
+                                ✅ Group Promote  commands
+                         💭#spromote : up leader by <reply|id|username> 
+                         💭#sdemote : in promote by <reply|id|username>
+                         💭#promote : by <reply|id|username> 
+                         💭#demote : by <reply|id|username> 
 
-        -- gban_installer.lua --
-        set_text(LANG, 'gban_installer:0', 1)
-        set_text(LANG, 'gban_installer:1', '#install gbans: اضافه کردن لیست بن های سراسری به دیتابیس شما.')
+                         💭/unban :- by <reply> 
 
-        -- giverank.lua --
-        set_text(LANG, 'giverank:0', 9)
-        set_text(LANG, 'giverank:1', '#rank admin (reply): افزودن ادمین با ریپلی.')
-        set_text(LANG, 'giverank:2', '#rank admin <user_id>/<user_name>: افزودن ادمین بوسیله یوزرنیم و یا آی دی.')
-        set_text(LANG, 'giverank:3', '#rank mod (reply): افزودن مدیر با ریپلی.')
-        set_text(LANG, 'giverank:4', '#rank mod <user_id>/<user_name>: افزودن مدیر بوسیله یوزرنیم و یا آی دی.')
-        set_text(LANG, 'giverank:5', '#rank guest (reply): گرفتن مقام ادمین ادمین با ریپلی.')
-        set_text(LANG, 'giverank:6', '#rank guest <user_id>/<user_name>: گرفتن مقام ادمین ادمین بوسیله یوزرنیم و یا آی دی.')
-        set_text(LANG, 'giverank:7', '#admins: لیست تمامی ادامین.')
-        set_text(LANG, 'giverank:8', '#mods: لیست تمامی مدیران.')
-        set_text(LANG, 'giverank:9', '#members: لیست تمامی اعضای چنل.')
-
-        -- id.lua --
-        set_text(LANG, 'id:0', 6)
-        set_text(LANG, 'id:1', '#id: نشان دادن ای دی شما و یا آی دی چنلی که در حال حاضر در آن هستید.')
-        set_text(LANG, 'id:2', '#ids chat: نشان دادن آی دی گروهی که در حال حاضر در آن هستید.')
-        set_text(LANG, 'id:3', '#ids channel: نشان دادن آی دی چنلی که در حال حاضر در آن هستید.')
-        set_text(LANG, 'id:4', '#id <user_name>: نشان دادن آی دی شخص مورد نظر شما.')
-        set_text(LANG, 'id:5', '#whois <user_id>/<user_name>: نشان دادن یوزرنیم شخص مورد نظر شما.')
-        set_text(LANG, 'id:6', '#whois (reply): نشان دادن آی دی شخص مورد نظر شما با ریپلی.')
-
-        -- moderation.lua --
-        set_text(LANG, 'moderation:0', 18)
-        set_text(LANG, 'moderation:1', '#add: با ریپلی کردن یک پیام شخص را به سوپرگروه یا گروه مورد نظر بی افزایید.')
-        set_text(LANG, 'moderation:2', '#add <id>/<username>: افزودن شخصی به وسیله آی دی و یا یوزرنیم به سوپرگروه یا گروه.')
-        set_text(LANG, 'moderation:3', '#kick: با ریپلی کردن یک پیام, شخص را از گروه و یا سوپر گروه اخراج کنید.')
-        set_text(LANG, 'moderation:4', '#kick <id>/<username>: می توانید با استفاده از آی دی و یا یوزرنیم ، شخصی را از گروه اخراج کنید.')
-        set_text(LANG, 'moderation:5', '#kickme: خودتان را از گروه اخراج کنید.')
-        set_text(LANG, 'moderation:6', '#ban: با ریپلی کردن پیامی از کاربر ، شخصی را از گروه اخراج و از ورود دوباره به گروه محروم کنید.')
-        set_text(LANG, 'moderation:7', '#ban <id>/<username>: بوسیله آی دی و یا یوزرنیم ، شخصی را از گروه اخراج و از ورود دوباره به گروه محروم کنید.')
-        set_text(LANG, 'moderation:8', '#unban: با ریپلی کردن پیامی از کاربر, کاربر را در سوپرگروه و یا گروه رفع محرومیت کنید.')
-        set_text(LANG, 'moderation:9', '#unban <id>/<username>: به وسیله آی دی و یا یوزرنیم ، شخصی را از گروه رفع ممنوعیت کنید.')
-        set_text(LANG, 'moderation:10', '#gban: با ریپلی کردن پیامی از کاربر, شخصی را از تمامی گروه ها و سوپرگروه ها اخراج و محروم کنید.')
-        set_text(LANG, 'moderation:11', '#gban <id>/<username>: بوسیله آی دی و یوزرنیم ، شخصی را اخراج و از ورود دوباره به تمامی گروه ها و سوپرگروه های خود محروم کنید.')
-        set_text(LANG, 'moderation:12', '#ungban: با ریپلی کردن پیامی از کاربر, کاربر را از تمامی گروه ها و سوپرگروه ها رفع محرومیت کنید.')
-        set_text(LANG, 'moderation:13', '#ungban <id>/<username>: بوسیله آی دی و یا یوزرنیم ، کاربر را از تمامی سوپرگروه ها و گروه ها رفع محرومیت کنید.')
-        set_text(LANG, 'moderation:14', '#mute: با ریپلی کردن پیامی از کاربر ، شخصی را از فرستادن پیام در این سوپرگروه محروم کرده و تمامی پیام هایش را پاک می کند.')
-        set_text(LANG, 'moderation:15', '#mute <id>/<username>: بوسیله آی دی و یا یوزرنیم ، شخصی را از فرستادن پیام در این سوپرگروه محروم کرده و تمامی پیام هایش را پاک می کند.')
-        set_text(LANG, 'moderation:16', '#unmute: با ریپلی کردن پیامی از کاربر, کاربر را از محرومیت ارسال پیام خارج کنید .')
-        set_text(LANG, 'moderation:17', '#unmute <id>/<username>: بوسیله آی دی و یا یوزرنیم کاربر ، کاربر را از محرومیت ارسال پیام خارج کنید.')
-        set_text(LANG, 'moderation:18', '#rem: با ریپلی کردن پیامی از کاربر, آن پیام حذف می شود.')
-        
-        -- settings.lua --
-        set_text(LANG, 'settings:0', 19)
-        set_text(LANG, 'settings:1', '#settings stickers enable/disable: وقتی غیرفعال باشد ، ربات تمامی استکیر هارا پاک خواهد کرد.')
-        set_text(LANG, 'settings:2', '#settings links enable/disable: وقتی غیرفعال باشد ، ربات  تمامی لینک هارا پاک خواهد کرد.')
-        set_text(LANG, 'settings:3', '#settings arabic enable/disabl: وقتی غیرفعال باشد ، ربات  تمامی پیام های فارسی و یا عربی را پاک خواهد کرد..')
-        set_text(LANG, 'settings:4', '#settings bots enable/disable: وقتی غیرفعال باشد ، ربات  اگر کسی رباتی را به گروه بیفزاید ، ربات را اخراج خواهد کرد.')
-        set_text(LANG, 'settings:5', '#settings gifs enable/disable: وقتی غیرفعال باشد ، ربات  تمامی تصاویر متحرک را پاک خواهد کرد.')
-        set_text(LANG, 'settings:6', '#settings photos enable/disable: وقتی غیرفعال باشد ، ربات  تمامی تصاویر را پاک خواهد کرد.')
-        set_text(LANG, 'settings:7', '#settings audios enable/disable: وقتی غیرفعال باشد ، ربات  تمامی فایل های صوتی را پاک خواهد کرد.')
-        set_text(LANG, 'settings:8', '#settings kickme enable/disable: وقتی غیرفعال باشد ، ربات  کاربران دیگر نمی توانند خودشان خودشان را اخراج کنند.')
-        set_text(LANG, 'settings:9', '#settings spam enable/disable: وقتی غیرفعال باشد ، ربات  تمامی اسپم هارا پاک خواهد کرد.')
-        set_text(LANG, 'settings:10', '#settings setphoto enable/disable: وقتی غیرفعال باشد ، ربات  اگر شخصی عکس گروه را تغییر دهد ، عکس قبلی گروه را بازگردانی و تنظیم می کند.')
-        set_text(LANG, 'settings:11', '#settings setname enable/disable: وقتی غیرفعال باشد ، ربات  اگر کسی نام گروه را تغییر دهد ، نام گروه را بازگردانی و تنظیم خواهد کرد..')
-        set_text(LANG, 'settings:12', '#settings lockmember enable/disable: وقتی غیرفعال باشد ، ربات  ربات هر شخصی را که وارد گروه شود را اخراج خواهد کرد.')
-        set_text(LANG, 'settings:13', '#settings floodtime <ثانیه>: تنظیم مقدار زمانی که بات فلود را بررسی می کند.')
-        set_text(LANG, 'settings:14', '#settings maxflood <ثانیه>: حداثکر تعداد فلود را تنظیم می کند.')
-        set_text(LANG, 'settings:15', '#setname <group title>: نام گروه را تغییر می دهد.')
-        set_text(LANG, 'settings:16', '#setphoto <then send photo>: تصویر گروه را تغییر می دهد.')
-        set_text(LANG, 'settings:17', '#lang <language (en, es...)>: زبان ربات را تغییر می دهد.')
-        set_text(LANG, 'settings:18', '#setlink <link>: لینک گروه را ذخیره می کند.')
-        set_text(LANG, 'settings:19', '#link: لینک گروه را ارسال می کند.')
-
-        -- plugins.lua --
-        set_text(LANG, 'plugins:0', 4)
-        set_text(LANG, 'plugins:1', '#plugins: لیست تمامی پلاگین هارا نشان می دهد.')
-        set_text(LANG, 'plugins:2', '#plugins <enable>/<disable> [plugin]: فعال/غیرفعال کردن پلاگین مورد نظر.')
-        set_text(LANG, 'plugins:3', '#plugins <enable>/<disable> [plugin] chat: فعال ، غیر فعال کردن پلاگین مورد نظر در گروه و یا سوپرگروه کنونی.')
-        set_text(LANG, 'plugins:4', '#plugins reload: بازنگری پلاگین ها.')
-
-        -- version.lua --
-        set_text(LANG, 'version:0', 1)
-        set_text(LANG, 'version:1', '#version: نشان دادن نسخه ربات.')
-
-        -- rules.lua --
-        set_text(LANG, 'rules:0', 1)
-        set_text(LANG, 'rules:1', '#rules: نشان دادن قوانین چنل.')
+                            ➖🔸➖🔹➖🔸➖🔹➖
+                              Version :- 2.0 🌠 Telegram Bot')
 
         if matches[1] == 'install' then
             return 'ℹ️ زبان شیرین فارسی (پارسی) با موفقیت بر روی ربات شما نصب شد.'
