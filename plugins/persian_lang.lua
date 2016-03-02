@@ -241,42 +241,86 @@ local function run(msg, matches)
 
         -- bot.lua --
         set_text(LANG, 'bot:0', 2)
-        set_text(LANG, 'bot:1', '
-		‌✅Commands part #1
-                              ➕
-                              ✅Commands for control member
-                         💭#kick : by <reply|id|username>
-                         💭#ban : by <reply|id|username>
-                         💭#unban : by <reply|id|username>
-                         💭#kickme
-                          💭#mute :- for one member by <id|reply|username>
-                        💭#mute :- cancel silent for member by <id|reply|username> 
+        set_text(LANG, '✅ Commands:
 
-                             ➕
-                             ✅Group control 
-                        💭#rules
-                        💭#setrules <write rules>
-                         💭#setphoto : then send photo
-                          💭#setname <write name>
-                       💭#id
-                        💭#ids chat :- show id and username all member in Gp
-                         💭#group settings :- settings Gp
-                        💭#getlink : send link in your pv
-                       💭#relink <id-chat> : change link group and send new link your pv
-                        💭#modlist :- show list moderation
-                        💭#help :- show the list help for you
+➕
+💭#bot on: |enable bot in current channel.
+💭#bot off: |disable bot in current channel.
 
-                                ➕
-                                ✅ Group Promote  commands
-                         💭#spromote : up leader by <reply|id|username> 
-                         💭#sdemote : in promote by <reply|id|username>
-                         💭#promote : by <reply|id|username> 
-                         💭#demote : by <reply|id|username> 
+➕
+💭#commands: Show all commands for every     plugin.
+💭#commands [plugin]: Commands for that plugin.
+➕
+💭#gbans installer: Return a lua file installer to share gbans and add those in another bot in just one command.
+💭#gbans list: Return an archive with a list of gbans.
 
-                         💭/unban :- by <reply> 
+➕
+💭#rank admin (reply): add admin by reply.
+💭#rank admin <user_id>/<user_name>: add admin by user ID/Username.
+💭#rank mod (reply): add mod by reply.
+💭#rank mod <user_id>/<user_name>: add mod by user ID/Username.
+💭#rank guest (reply): remove admin by reply.
+💭#rank guest <user_id>/<user_name>: remove admin by user ID/Username.
+💭#admins: list of all admin members.
+💭#mods: list of all mod members.
+💭#members: list of all channel members.
 
-                            ➖🔸➖🔹➖🔸➖🔹➖
-                              Version :- 2.0 🌠 Telegram Bot')
+➕
+💭#id: Return your ID and the chat id if you are in one.
+💭#ids chat: Return the IDs of the current chat members.
+💭#ids channel: Return the IDs of the current channel members.
+💭#id <user_name>: Return the member username ID from the current chat.
+💭#whois <user_id>/<user_name>: Return username.
+💭#whois (reply): Return user id.
+➕
+💭#add: replying to a message, the user will be added to the current group/supergroup.
+💭#add <id>/<username>: adds a user by its ID/Username to the current group/supergroup.
+💭#kick: replying to a message, the user will be kicked in the current group/supergroup.
+💭#kick <id>/<username>: the user will be kicked by its ID/Username in the current group/supergroup.
+💭#kickme: kick yourself.
+💭#ban: replying to a message, the user will be kicked and banned in the current group/supergroup.
+💭#ban <id>/<username>: the user will be banned by its ID/Username in the current group/supergroup and it wont be able to return.
+💭#unban: replying to a message, the user will be unbanned in the current group/supergroup.
+💭#unban <id>/<username>: the user will be unbanned by its ID/Username in the current group/supergroup.
+💭#gban: replying to a message, the user will be kicked and banned from all groups/supergroups.
+💭#gban <id>/<username>: the user will be banned by its ID/Username from all groups/supergroups and it wont be able to enter.
+💭#ungban: replying to a message, the user will be unbanned from all groups/supergroups.
+💭#ungban <id>/<username>: the user will be unbanned by its ID/Username from all groups/supergroups.
+💭#mute: replying to a message, the user will be silenced in the current supergroup, erasing all its messages.
+💭#mute <id>/<username>: the user will be silenced by its ID/Username inthe current supergroup, erasing all its messages.
+💭#unmute: replying to a message, the user will be unsilenced in the current supergroup.
+💭#unmute <id>/<username>: the user will be unsilenced by its ID/Username in the current supergroup.
+💭#rem: replying to a message, the message will be removed.
+➕
+💭#plugins: shows a list of all plugins.
+💭#plugins <enable>/<disable> [plugin]: enable/disable the specified plugin.
+💭#plugins <enable>/<disable> [plugin] chat: enable/disable the specified plugin, only in the current group/supergroup.
+💭#plugins reload: reloads all plugins.
+        	➕
+💭#settings stickers enable/disable: when disabled, all stickers will be cleared.
+#settings links enable/disable: when disabled, all links will be cleared.
+💭#settings arabic enable/disabl: when disabled, all messages with arabic/persian will be cleared.
+💭#settings bots enable/disable: when disabled, if someone adds a bot, it will be kicked.
+💭#settings gifs enable/disable: when disabled, all gifs will be cleared.
+💭#settings photos enable/disable: when disabled, all photos will be cleared.
+💭#settings audios enable/disable: when disabled, all audios will be cleared.
+💭#settings kickme enable/disable: when disabled, people can kick out itself.
+💭#settings spam enable/disable: when disabled, all spam links will be cleared.
+💭#settings setphoto enable/disable: when enabled, if a user changes the group photo, the bot will revert to the saved photo.
+💭#settings setname enable/disable: when enabled, if a user changes the group name, the bot will revert to the saved name.
+💭#settings lockmember enable/disable: when enabled, the bot will kick all people th
+
+➕
+hat enters to the group.
+💭#settings floodtime <secs>: set the time that bot uses to check flood.
+💭#settings maxflood <msgs>: set the maximum messages in a floodtime to be considered as flood.
+💭#setname <group title>: the bot will change group title.
+💭#setphoto <then send photo>: the bot will change group photo.
+💭#lang <language (en, es...)>: it changes the language of the bot.
+💭#setlink <link>: saves the link of the group.
+💭#link: to get the link of the group.
+➕➕
+💭#version: shows bot version.')
 
         if matches[1] == 'install' then
             return 'ℹ️ زبان شیرین فارسی (پارسی) با موفقیت بر روی ربات شما نصب شد.'
