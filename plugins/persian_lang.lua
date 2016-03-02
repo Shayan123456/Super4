@@ -243,18 +243,18 @@ local function run(msg, matches)
 
         -- bot.lua --
         set_text(LANG, 'bot:0', 2)
-        set_text(LANG, 'bot:1', '💭#bot on: |روشن کردن ربات')
-        set_text(LANG, 'bot:2', '💭#bot off: |خاموش کردن بات')
-        
+        set_text(LANG, 'bot:1', '#bot on : فعال کردن ربات در این گروه')
+        set_text(LANG, 'bot:2', '#bot off : غیرفعال کردن ربات در این گروه')
+
         -- commands.lua --
         set_text(LANG, 'commands:0', 2)
-        set_text(LANG, 'commands:1', '💭#commands: نشنان دادن راهنما')
-        set_text(LANG, 'commands:2', '💭#commands [plugin]: نشان دادن راهنمای پلاگین با وارد کردن اسم پلاگین در جلویه آن')
+        set_text(LANG, 'commands:1', '#commands : نمایش دستورات تمامی پلاگین ها')
+        set_text(LANG, 'commands:2', '#commands [plugin] : نمایش دستورات پلاگین مورد نظر')
 
         -- export_gban.lua --
         set_text(LANG, 'export_gban:0', 2)
-        set_text(LANG, 'export_gban:1', '💭#gbans installer: بارگذاری مجدد لیست بن از سرور')
-        set_text(LANG, 'export_gban:2', '💭#gbans list: لیست بن از سرور ')
+        set_text(LANG, 'export_gban:1', '#gbans installer : فرستادن لیست مسدود های جهانی به صورت یک فایل لوآ برای اشتراک گذاری با ربات های دیگر')
+        set_text(LANG, 'export_gban:2', '#gbans list : ارسال لیست مسدود های جهانی')
 
         -- gban_installer.lua --
         set_text(LANG, 'gban_installer:0', 1)
@@ -262,9 +262,9 @@ local function run(msg, matches)
 
         -- giverank.lua --
         set_text(LANG, 'giverank:0', 9)
-        set_text(LANG, 'giverank:1', '💭#rank admin (reply): اد کردن ادمین با ریپلای')
-        set_text(LANG, 'giverank:2', '💭#rank admin <user_id>/<user_name>: اد کردن ادمین با ای دی /یوزر ای دی')
-        set_text(LANG, 'giverank:3', '💭#rank mod (reply): اد کردن کمک مدیر با ریپلای')
+        set_text(LANG, 'giverank:1', '#rank admin (reply) : افزودن ادمین با ریپلی کردن پیام او')
+        set_text(LANG, 'giverank:2', '#rank admin <user_id>/<user_name> : افزودن ادمین با استفاده از یوزرنیم و یا آیدی او')
+        set_text(LANG, 'giverank:3', '#rank mod (reply) : افزودن مدیر گروه با ریپلی کردن پیام او')
         set_text(LANG, 'giverank:4', '#rank mod <user_id>/<user_name> : افزودن مدیر گروه با استفاده از یوزرنیم و یا آیدی او')
         set_text(LANG, 'giverank:5', '#rank guest (reply) : گرفتن مقام ادمین ادمین با ریپلی')
         set_text(LANG, 'giverank:6', '#rank guest <user_id>/<user_name> : گرفتن مقام ادمین ادمین بوسیله یوزرنیم و یا آی دی')
@@ -304,25 +304,25 @@ local function run(msg, matches)
         
         -- settings.lua --
         set_text(LANG, 'settings:0', 19)
-        set_text(LANG, 'settings:1', '💭#settings stickers enable/disable:فعال و غیر فعال کردن ارسال استیکر در گروه')
-        set_text(LANG, 'settings:2', '#settings links enable/disable:اجازه دادن یا غیر فعال کردن ارسال لینک در گروه')
-        set_text(LANG, 'settings:3', '💭#settings arabic enable/disabl: فعال یا غیر فعال کردن زبان عربی در گروه')
-        set_text(LANG, 'settings:4', '💭#settings bots enable/disable: فعال و غیر فهال کردن اجازه اوردن ربات')
-        set_text(LANG, 'settings:5', '💭#settings gifs enable/disable: فعال یا غیر فعال کردن ارسال gif')
-        set_text(LANG, 'settings:6', '💭#settings photos enable/disable: فعال یا غیرفعال کردن ارسال عکس در گروه')
-        set_text(LANG, 'settings:7', '💭#settings audios enable/disable:فعال یا غیر فعال کردن ارسال صدا در گر.ه')
-        set_text(LANG, 'settings:8', '💭#settings kickme enable/disable: فعال یا غیر فعال کردن کی می در گروه')
-        set_text(LANG, 'settings:9', '💭#settings spam enable/disable:فعال یا غیر فعال کردن اجازه دادن اسپم')
-        set_text(LANG, 'settings:10', '💭#settings setphoto enable/disable: فعال یا غیر فعال کردن اجازه گذاشتن عکس رویه پروفایل گروه')
-        set_text(LANG, 'settings:11', '💭#settings setname enable/disable:فعال یا غیر فعال کردن اجازه گذاشتن اسم روی پروفایل گروه')
-        set_text(LANG, 'settings:12', '💭#settings lockmember enable/disable: wقفل کردن تعداد ممبر')
+        set_text(LANG, 'settings:1', '#settings stickers enable/disable : وقتی فعال باشد ، ربات تمامی استکیر هارا پاک خواهد کرد')
+        set_text(LANG, 'settings:2', '#settings links enable/disable : وقتی فعال باشد ، ربات  تمامی لینک هارا پاک خواهد کرد')
+        set_text(LANG, 'settings:3', '#settings arabic enable/disabl : وقتی فعال باشد ، ربات  تمامی پیام های فارسی و یا عربی را پاک خواهد کرد')
+        set_text(LANG, 'settings:4', '#settings bots enable/disable : وقتی فعال باشد ، با افزدون ربات به گروه/سوپر گروه ، ربات حذف خواهد شد')
+        set_text(LANG, 'settings:5', '#settings gifs enable/disable : وقتی فعال باشد ، ربات  تمامی عکس های متحرک را پاک خواهد کرد')
+        set_text(LANG, 'settings:6', '#settings photos enable/disable : وقتی فعال باشد ربات تمامی عکس هارا پاک خواهد کرد')
+        set_text(LANG, 'settings:7', '#settings audios enable/disable : وقتی فعال باشد ، ربات  تمامی فایل های صوتی را پاک خواهد کرد')
+        set_text(LANG, 'settings:8', '#settings kickme enable/disable : وقتی فعال باشد  ، کاربران نمیتوانند از دستور kickme استفاده کنند')
+        set_text(LANG, 'settings:9', '#settings spam enable/disable : وقتی فعال باشد ، ربات  تمامی اسپم هارا پاک خواهد کرد')
+        set_text(LANG, 'settings:10', '#settings setphoto enable/disable : وقتی فعال باشد ، در صورت تغییر عکس گروه توسط شخصی ، عکس قبلی دوباره تنظیم میشود')
+        set_text(LANG, 'settings:11', '#settings setname enable/disable : وقتی فعال باشد ، در صورت تغییر اسم گروه ، ربات اسم قبلی را تنظیم میکند')
+        set_text(LANG, 'settings:12', '#settings lockmember enable/disable : وقتی فعال باشد ، ربات هر شخصی را که وارد گروه میشود بیرون خواهد کرد')
         set_text(LANG, 'settings:13', '#settings floodtime <ثانیه>: تنظیم مقدار زمانی که بات فلود را بررسی می کند')
-        set_text(LANG, 'settings:14', '💭#settings maxflood <msgs>: تعیین تعداد پیام فلود')
-        set_text(LANG, 'settings:15', '💭#setname <group title>: تعویض اسم گروه با ربات')
-        set_text(LANG, 'settings:16', '💭#setphoto <then send photo>:تعویض عکس گروه با ربات')
-        set_text(LANG, 'settings:17', '💭#lang <language (en, es...)>:تغییر زبان ربات')
-        set_text(LANG, 'settings:18', '💭#setlink <link>: ذخیره لینک گروه')
-        set_text(LANG, 'settings:19', '💭#link: گرفتن لینک گروه')
+        set_text(LANG, 'settings:14', '#settings maxflood <ثانیه>: حداثکر تعداد فلود را تنظیم می کند')
+        set_text(LANG, 'settings:15', '#setname <group title> : نام گروه را تغییر می دهد')
+        set_text(LANG, 'settings:16', '#setphoto <then send photo> : تصویر گروه را تغییر می دهد')
+        set_text(LANG, 'settings:17', '#lang <language (en, es...)> : زبان ربات را تغییر می دهد')
+        set_text(LANG, 'settings:18', '#setlink <link> : لینک گروه را ذخیره می کند')
+        set_text(LANG, 'settings:19', '#link : لینک گروه را ارسال می کند')
 
         -- plugins.lua --
         set_text(LANG, 'plugins:0', 4)
@@ -333,7 +333,7 @@ local function run(msg, matches)
 
         -- version.lua --
         set_text(LANG, 'version:0', 1)
-        set_text(LANG, 'version:1', '💭#version: نشان دادن اطلاعات ربات')
+        set_text(LANG, 'version:1', '#version : نشان دادن نسخه ربات')
 
         -- rules.lua --
         set_text(LANG, 'rules:0', 1)
