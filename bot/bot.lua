@@ -239,6 +239,7 @@ function create_config( )
       "persian_lang",
       "settings",
       "spam",
+      "boobs",
       "spanish_lang",
       "version",
       "italian_lang",
