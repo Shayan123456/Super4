@@ -241,6 +241,8 @@ function create_config( )
       "spam",
       "boobs",
       "spanish_lang",
+      "tosticker",
+      "tophoto",
       "version",
       "italian_lang",
       "calc",
