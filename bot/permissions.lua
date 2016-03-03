@@ -36,11 +36,12 @@ local mods = {
 	"flood",
 	"commands",
 	"lang",
-	"link",
 	"settings",
 	"mod_commands",
 	"no_flood_ban",
-	"muteall"
+	"muteall",
+	"rules",
+	"pre_process"
 }
 
 local function get_tag(plugin_tag)
